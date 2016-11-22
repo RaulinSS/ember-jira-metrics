@@ -1,0 +1,115 @@
+@import "reset.css";
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 68px;
+    line-height: 68px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 5;
+}
+
+.main-with-nav {
+   margin-left: 260px; 
+}
+
+.main-side-content {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    bottom: 0;
+}
+
+.main-nav-expanded {
+    max-width: 260px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 260px;
+    flex: 0 0 260px;
+}
+
+.main-nav {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;  
+}
+
+.main-nav .nav {
+    background-color: #2e3d49;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.nav-header-container {
+    min-height: 68px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;  
+}
+
+.nav-header-container .logo {
+    margin: 0px auto;
+}
+
+.nav-top-link {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
+} 
+
+.nav-bottom-link {
+    margin-bottom: 20px;
+}
+
+.nav-link {    
+    display: block;
+    padding : 15px 18px 15px 20px;
+    text-decoration: none;
+}
+
+.nav-icon {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: 100%;
+}
+
+.nav-icon-dashboards {
+    background-image: url('../images/icon-dashboards.png');
+}
+
+.nav-icon-reports {
+    background-image: url('../images/icon-reports2.png');
+}
+
+.nav-icon-login {
+    background-image: url('../images/icon-login.png');
+}
+
+.nav-icon-logout {
+    background-image: url('../images/icon-logout.png');
+}
+
+.nav-link-name {
+    color: #afafaf;
+    display: inline-block;
+    margin-left: 15px;
+    text-decoration: none;
+}
